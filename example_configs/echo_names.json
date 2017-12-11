@@ -1,0 +1,9 @@
+{
+  "ignoreGlobs": ["node_modules"],
+  "guards": [
+    {
+      "glob": "*.js",
+      "action": "echo $&"
+    }
+  ]
+}

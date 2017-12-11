@@ -9,12 +9,14 @@
   "bin": {
     "one-eye-open": "dist/bin/one-eye-open.js"
   },
-  "pre-commit": ["lint", "test"],
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
   "scripts": {
     "build": "./node_modules/.bin/babel -d dist src/ && chmod +x dist/bin/*",
     "test": "node node_modules/jest/bin/jest.js",
-    "test:coverage":
-      "node node_modules/jest/bin/jest.js --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "test:coverage": "node node_modules/jest/bin/jest.js --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "test:watch": "node node_modules/jest/bin/jest.js --watch",
     "precommit": "yarn lint",
     "prepush": "yarn test && yarn lint",
@@ -26,11 +28,20 @@
     "type": "git",
     "url": "git+https://github.com/pristinenoise/one-eye-open.git"
   },
-  "keywords": ["chokidar", "file", "watcher", "watch", "guard", "nodemon"],
+  "keywords": [
+    "chokidar",
+    "file",
+    "watcher",
+    "watch",
+    "guard",
+    "nodemon"
+  ],
   "bugs": {
     "url": "https://github.com/pristinenoise/one-eye-open/issues"
   },
   "dependencies": {
+    "chokidar": "^1.7.0",
+    "minimatch": "^3.0.4",
     "pre-commit": "^1.2.2"
   },
   "devDependencies": {
@@ -49,7 +60,9 @@
     "prettier": "^1.9.1"
   },
   "jest": {
-    "collectCoverageFrom": ["src/**/*.js"],
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
     "coverageThreshold": {
       "global": {
         "statements": 90,

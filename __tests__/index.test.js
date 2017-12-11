@@ -1,5 +1,3 @@
-import randomFunction from "../src/index";
-
-test("Test randomFunction", () => {
-  expect(randomFunction()).toEqual([9, 25]);
+test("that jest testing works", () => {
+  expect(2 + 2).toEqual(4);
 });
