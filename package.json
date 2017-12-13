@@ -42,7 +42,8 @@
   "dependencies": {
     "chokidar": "^1.7.0",
     "minimatch": "^3.0.4",
-    "pre-commit": "^1.2.2"
+    "pre-commit": "^1.2.2",
+    "yargs": "^10.0.3"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
